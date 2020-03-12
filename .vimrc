@@ -10,4 +10,11 @@ set syntax=on           "语法高亮
 set incsearch           "输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
 set ignorecase          "搜索忽略大小写
 
+" Config NERDTree
 map <F3> :NERDTreeToggle<CR>    "映射F3唤醒nerdtree
+
+" Config BufExplorer
+let g:bufExplorerDefaultHelp=0       " Do not show default help.
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
+let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+map <F9> :BufExplorer<CR>
